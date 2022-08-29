@@ -33,7 +33,7 @@ class TextPreprocessing:
 
         # You can custom stopwords list below, we will use stopword custom for remove stopword
         stopword_custom =["yg", "dg", "rt", "dgn", "ny", "d", 'klo', 'kalo', 'amp', 'biar', 'bikin', 'bilang', 'gak', 'ga', 'krn', 'nya', 'nih', 'sih', 'si', 'tau', 'tdk', 'tuh', 'utk', 'ya', 'jd', 'jgn', 'sdh', 'aja', 'nyg', 'hehe', 'pen', 'nan', 'loh','&amp', 'yah']
-        stopword_extend = pd.read_csv("../stopwordsID.csv")
+        stopword_extend = pd.read_csv("stopwordsID.csv")
         stopword_custom.extend(stopword_extend)
 
         # Add custom stopword to sastrawi and convert to dictionary
@@ -115,7 +115,7 @@ class DataPreprocessing:
 
         # You can custom stopwords list below, we will use stopword custom for remove stopword
         stopword_custom =["yg", "dg", "rt", "dgn", "ny", "d", 'klo', 'kalo', 'amp', 'biar', 'bikin', 'bilang', 'gak', 'ga', 'krn', 'nya', 'nih', 'sih', 'si', 'tau', 'tdk', 'tuh', 'utk', 'ya', 'jd', 'jgn', 'sdh', 'aja', 'nyg', 'hehe', 'pen', 'nan', 'loh','&amp', 'yah']
-        stopword_extend = pd.read_csv("../stopwordsID.csv")
+        stopword_extend = pd.read_csv("stopwordsID.csv")
         stopword_custom.extend(stopword_extend)
 
         # Add custom stopword to sastrawi and convert to dictionary

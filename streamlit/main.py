@@ -5,13 +5,13 @@ from Utility import TextPreprocessing
 from Utility import DataPreprocessing
 
 # Import dataset
-df = pd.read_excel('../Instagram Cyber Bullying.xlsx', sheet_name='Sheet1')
+df = pd.read_excel('Instagram Cyber Bullying.xlsx', sheet_name='Sheet1')
 # Drop unused feature
 df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
 df.drop(['No.'], axis=1, inplace=True)
 
 # Import model for testing
-model = joblib.load(open('../SVM_Classifier.pkl', 'rb'))
+model = joblib.load(open('SVM_Classifier.pkl', 'rb'))
 
 
 
