@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 import joblib
 from Utility import TextPreprocessing
 from Utility import DataPreprocessing
@@ -21,6 +19,7 @@ model = joblib.load(open('../SVM_Classifier.pkl', 'rb'))
 st.title('Sentiment Analysis ID Project')
 st.write('By: Mohamad Abyannaufal')
 st.write("I'm using this dataset to feed my machine so it can be smart. Please take a look! :D")
+st.write("You can download dataset in here: https://www.kaggle.com/code/syauqiddjohan/skripsi-sentiment-analysis-project/data")
 
 df
 
